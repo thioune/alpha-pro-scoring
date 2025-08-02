@@ -1,0 +1,63 @@
+.home-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .home-logo {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+  }
+  
+  .home-btn {
+    font-size: 30px;
+    padding: 50px 80px;
+    border: none;
+    border-radius: 15px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease;
+    font-family: 'Michroma', sans-serif;
+  }
+  
+  .home-btn:hover {
+    transform: scale(1.05);
+    background-color: #333;
+  }
+  
+  .code-popup {
+    margin-top: 100px;
+  }
+  
+  .code-popup input {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Michroma', sans-serif;
+  }
+
+  .footer {
+    margin-top: 130px;
+    font-size: 16px;
+    color: #aaa;
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+
+  }
+
+  .homepage {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;   /* ✅ empêche le scroll horizontal et vertical */
+  }
+  
+  
