@@ -282,48 +282,6 @@ const handleKeyPress = (e) => {
    
     <div className="scoreboard-container" ref={pageRef} onKeyDown={handleKeyPress} tabIndex="0">
   
-  
-      
-<div className={`player-section ${state.activePlayer === 'A' ? 'selected' : ''}`}>
-
-  
-    <div className="player-name">{playerA.name}</div>
-    <div className="player-score">{state.scoreA}</div>
-    <div className="break-label">Break</div>
-    <div className="break-score">{state.activePlayer === 'A' ? state.currentBreak : 0}</div>
-    <div className="ball-row">
-      {state.activePlayer === 'A' &&
-        state.currentBreakBalls.map((val, i) => (
-          <span key={i} className={`ball ${getBallColor(val)}`}></span>
-        ))}
-    </div>
-    
-  </div>
-
-  
-
-
-  <div className="center-info">
-
-  
-  <div className="center-content"></div>
-  <div className="game-timer">
-  {String(Math.floor(timer / 60)).padStart(2, '0')}:
-  {String(timer % 60).padStart(2, '0')}
-</div>
-
-  <div className="frames">
-  <div className="title">Frames :</div>
-  <div className="score">{state.framesA}-{state.framesB}</div>
-
-</div>
-
-    <h2>{state.isGameStarted ? 'Game in progress' : 'No active game'}</h2>
-
-<div className="points">Remaining: {getRemainingPoints()}</div>
-    
-    <p style={{ opacity: 0.5, fontSize: '14px' }}>⚠️ If you notice an issue, please call the admin or an attendant.</p>
-
     {showCodeInput && (
       <div className="admin-code-input">
         <h3>Admin code required</h3>
@@ -388,6 +346,48 @@ const handleKeyPress = (e) => {
     {message}
   </div>
 )}
+      
+<div className={`player-section ${state.activePlayer === 'A' ? 'selected' : ''}`}>
+
+  
+    <div className="player-name">{playerA.name}</div>
+    <div className="player-score">{state.scoreA}</div>
+    <div className="break-label">Break</div>
+    <div className="break-score">{state.activePlayer === 'A' ? state.currentBreak : 0}</div>
+    <div className="ball-row">
+      {state.activePlayer === 'A' &&
+        state.currentBreakBalls.map((val, i) => (
+          <span key={i} className={`ball ${getBallColor(val)}`}></span>
+        ))}
+    </div>
+    
+  </div>
+
+  
+
+
+  <div className="center-info">
+
+  
+  <div className="center-content"></div>
+  <div className="game-timer">
+  {String(Math.floor(timer / 60)).padStart(2, '0')}:
+  {String(timer % 60).padStart(2, '0')}
+</div>
+
+  <div className="frames">
+  <div className="title">Frames :</div>
+  <div className="score">{state.framesA}-{state.framesB}</div>
+
+</div>
+
+    <h2>{state.isGameStarted ? 'Game in progress' : 'No active game'}</h2>
+
+<div className="points">Remaining: {getRemainingPoints()}</div>
+    
+    <p style={{ opacity: 0.5, fontSize: '14px' }}>⚠️ If you notice an issue, please call the admin or an attendant.</p>
+
+   
 
   </div>
 

@@ -159,6 +159,12 @@ const [timerInterval, setTimerInterval] = useState(null);
       alert("Code administrateur incorrect.");
     }
     setTimer(0); // reset timer
+
+      // ✅ Nettoie l'ancien intervalle s’il existe
+      if (timerInterval) {
+        clearInterval(timerInterval);
+      }
+
 const interval = setInterval(() => {
   setTimer(prev => prev + 1);
 }, 1000);
@@ -178,7 +184,8 @@ setTimerInterval(interval);
   
     if (timerInterval) clearInterval(timerInterval);
     setTimerInterval(null);
-    
+    setTimer(0); // 🧹 Réinitialise l’affichage du chrono
+
 
     const winner = scoreA > scoreB ? playerA : playerB;
   
