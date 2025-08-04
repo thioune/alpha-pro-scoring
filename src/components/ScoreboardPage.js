@@ -77,7 +77,8 @@ const [codeBuffer, setCodeBuffer] = useState('');
           fontSize: '2em',
           letterSpacing: '10px',
         }}>
-          {codeBuffer.padEnd(6, '•')}
+          {'*'.repeat(codeBuffer.length).padEnd(6, '•')}
+
         </div>
         <div style={{ marginTop: '20px', fontSize: '0.8em' }}>
           Appuyez sur <strong>Entrée</strong> pour valider, <strong>Undo</strong> pour annuler
