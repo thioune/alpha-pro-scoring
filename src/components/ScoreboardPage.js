@@ -383,7 +383,7 @@ const handleKeyPress = (e) => {
 
 </div>
 
-    <h2>{state.isGameStarted ? 'Game in progress' : 'No active game'}</h2>
+    <h2>{state.isGameStarted ? 'Game in progresssssss' : 'No active game'}</h2>
 
 <div className="points">Remaining: {getRemainingPoints()}</div>
     
