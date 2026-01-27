@@ -143,7 +143,7 @@ const handleKeyPress = (e) => {
       if (codeBuffer.length < 6) {
         setCodeBuffer((prev) => prev + String.fromCharCode(code));
       }
-    } else if (code === 13) {
+} else if (code === 13 || code === 229 || e.code === 'NumpadEnter') {
       // Touche Entrée
       startGameWithCode(codeBuffer); // ✅ La bonne fonction
 
@@ -291,15 +291,17 @@ const handleKeyPress = (e) => {
           value={adminCode}
           onChange={(e) => setAdminCode(e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              startGameWithCode(adminCode);
-              setAdminCode('');
-              setShowCodeInput(false);
-              setTimeout(() => {
-                pageRef.current?.focus();
-              }, 100);
-            }
-          }}
+  const code = e.keyCode || e.which;
+  if (e.key === 'Enter' || e.code === 'NumpadEnter' || code === 13 || code === 229) {
+    startGameWithCode(adminCode);
+    setAdminCode('');
+    setShowCodeInput(false);
+    setTimeout(() => {
+      pageRef.current?.focus();
+    }, 100);
+  }
+}}
+
         />
       </div>
     )}
