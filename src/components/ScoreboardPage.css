@@ -1,5 +1,3 @@
-/* === ScoreboardPage.css === */
-
 .top-bar {
   width: 100%;
   height: 20px; /* ou 80px, comme tu veux */
@@ -17,13 +15,13 @@
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
     height: calc(100vh - 100px);  
-      width: 100vw;
+      width: 100%;
 overflow: hidden;
     color: white;
     background-color: #111;
     font-family: 'Michroma', sans-serif;
     text-align: center;
-    padding-top: 100px; /* ✅ espace vers le haut pour libérer le logo */
+    padding-top: 100px; /* âœ… espace vers le haut pour libÃ©rer le logo */
   box-sizing: border-box;
   outline: none;
   }
@@ -32,9 +30,9 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  /* ✅ centré verticalement */
+    justify-content: center;  /* âœ… centrÃ© verticalement */
     max-height: 80vh;
-  transform: scale(0.9); /* réduit la taille visuelle */
+  transform: scale(0.9); /* rÃ©duit la taille visuelle */
   }
   .player-name {
     font-family: 'Michroma', sans-serif;
@@ -50,14 +48,14 @@ overflow: hidden;
   }
   
   .break-label {
-    color: rgb(120, 17, 17);
+    color: red;
     font-size: 1.5rem;
     margin-top: 10px;
   }
   
   .break-score {
     font-size: 2rem;
-    color: rgb(120, 17, 17);
+    color: red;
   }
   
   .ball-row {
@@ -87,7 +85,7 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* ✅ colle tout en haut */
+    justify-content: space-between; /* âœ… colle tout en haut */
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -220,6 +218,5 @@ overflow: hidden;
   align-items: center;
   z-index: 1000;
 }
-
 
 
