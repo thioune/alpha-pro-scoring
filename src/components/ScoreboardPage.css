@@ -48,7 +48,7 @@ overflow: hidden;
   }
   
   .break-label {
-    color: red;
+    color: rgb(225, 0, 255);
     font-size: 1.5rem;
     margin-top: 10px;
   }
