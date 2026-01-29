@@ -50,14 +50,14 @@ overflow: hidden;
   }
   
   .break-label {
-    color: rgb(21, 0, 255);
+    color: rgb(120, 17, 17);
     font-size: 1.5rem;
     margin-top: 10px;
   }
   
   .break-score {
     font-size: 2rem;
-    color: red;
+    color: rgb(120, 17, 17);
   }
   
   .ball-row {
