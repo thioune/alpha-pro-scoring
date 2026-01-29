@@ -21,9 +21,8 @@ overflow: hidden;
     background-color: #111;
     font-family: 'Michroma', sans-serif;
     text-align: center;
-    padding-top: 100px; /* âœ… espace vers le haut pour libÃ©rer le logo */
-  box-sizing: border-box;
-  outline: none;
+    box-sizing: border-box;
+    outline: none;
   }
   
   .player-section {
@@ -48,7 +47,7 @@ overflow: hidden;
   }
   
   .break-label {
-    color: rgb(60, 0, 255);
+    color: rgb(81, 81, 81);
     font-size: 1.5rem;
     margin-top: 10px;
   }
