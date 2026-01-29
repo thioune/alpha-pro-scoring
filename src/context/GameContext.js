@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, } from 'react';
 export const GameContext = createContext();
 
 const storedMatches = JSON.parse(localStorage.getItem('matches')) || [];
@@ -242,7 +242,6 @@ ballHistory: []
   const submitFoul = (foulValue) => {
     setState(prev => {
 
-      const opponent = prev.activePlayer === 'A' ? 'B' : 'A';
       let newScoreA = prev.scoreA;
       let newScoreB = prev.scoreB;
   

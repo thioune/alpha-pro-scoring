@@ -16,15 +16,14 @@ const ScoreboardPage = () => {
     addPointsToPlayer,
     switchPlayer,
     undoLastAction,
-    resetGame,
     startGameWithCode,
     endGame,
-     enterFoulMode, submitFoul,
-     toggleFreeBallMode,
-     exitFoulMode,
-     updateFrames,
-     timer,
-     getRemainingPoints
+    enterFoulMode, submitFoul,
+    toggleFreeBallMode,
+    exitFoulMode,
+    updateFrames,
+    timer,
+    getRemainingPoints
   } = useContext(GameContext);
 
 
@@ -35,7 +34,7 @@ const ScoreboardPage = () => {
 const [codeBuffer, setCodeBuffer] = useState('');
 
   
-  const { state: gameState, setState: setGameState } = useContext(GameContext);
+  const { setState: setGameState } = useContext(GameContext);
 
 
   const getBallColor = (value) => {
