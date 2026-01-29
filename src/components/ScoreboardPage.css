@@ -1,6 +1,6 @@
 .top-bar {
   width: 100%;
-  height: 5px; /* ou 80px, comme tu veux */
+  height: 15px; /* ou 80px, comme tu veux */
   background-color: #111;
   display: flex;
   align-items: center;
