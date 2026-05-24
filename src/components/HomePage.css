@@ -1,10 +1,11 @@
 .home-container {
     text-align: center;
     margin-top: 40px;
+    font-family: 'Michroma', sans-serif;
   }
-  
+
   .home-logo {
-    width: 200px;
+    width: 280px;
     margin-bottom: 20px;
   }
   

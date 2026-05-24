@@ -122,13 +122,13 @@ overflow: hidden;
     font-size: 38px;
     font-weight: bold;
     margin-top: 4px;
-    color: #d9b15b;
+    color: #ffffff;
   }
 
   .center-info .frames,
   .center-info .points {
     font-size: 1.6rem;
-    color: #d9b15b;
+    color: #ffffff;
   }
   
   .center-info .break {
@@ -198,7 +198,7 @@ overflow: hidden;
 }
 
 .game-timer {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: bold;
   color: rgb(163, 58, 58);
   margin-bottom: 10px;
